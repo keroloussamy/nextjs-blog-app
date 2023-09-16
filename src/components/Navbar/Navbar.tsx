@@ -24,3 +24,8 @@ export default function Navbar() {
     </div>
   )
 }
+
+/* 
+The code inside both ThemeToggle and AuthLinks uses hooks.
+So we separated them in different components to let the Navbar be a server component. And both of them are client components.
+*/
