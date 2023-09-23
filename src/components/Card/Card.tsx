@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./card.module.css";
 import Link from "next/link";
 
-const Card = () => {
+const Card = ({ key, item }: { key: string; item: Post }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
