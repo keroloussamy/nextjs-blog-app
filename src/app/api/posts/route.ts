@@ -1,8 +1,7 @@
 import prisma from "@/utils/connect";
-import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 
-export const GET = async (req: NextApiRequest) => {
+export const GET = async (req: Request) => {
     const { searchParams } = new URL(req.url || "");
 
     const page = searchParams.get("page");
@@ -19,6 +18,7 @@ export const GET = async (req: NextApiRequest) => {
     };
     
     try {
+      // The prisma.$transaction method is used to execute multiple queries.
       const [posts, count] = await prisma.$transaction([
         prisma.post.findMany(query),
         prisma.post.count({ where: query.where }),
@@ -29,10 +29,5 @@ export const GET = async (req: NextApiRequest) => {
       return new NextResponse(JSON.stringify({ message: "Something went wrong!" }), { status: 500 });
     }
 };
-
-/**
- * The prisma.$transaction method is used to execute multiple queries.
- */
-
 
 
