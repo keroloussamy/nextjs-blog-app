@@ -9,7 +9,7 @@ const MenuPosts = ({ withImage }: { withImage: boolean }) => {
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+            <Image src="/p1.jpeg" alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -26,7 +26,7 @@ const MenuPosts = ({ withImage }: { withImage: boolean }) => {
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+            <Image src="/p1.jpeg" alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -45,7 +45,7 @@ const MenuPosts = ({ withImage }: { withImage: boolean }) => {
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+            <Image src="/p1.jpeg" alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
@@ -62,7 +62,7 @@ const MenuPosts = ({ withImage }: { withImage: boolean }) => {
       <Link href="/" className={styles.item}>
         {withImage && (
           <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+            <Image src="/p1.jpeg" alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" className={styles.image} />
           </div>
         )}
         <div className={styles.textContainer}>
