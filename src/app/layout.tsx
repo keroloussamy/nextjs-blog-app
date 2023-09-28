@@ -1,13 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
 import AuthProvider from "@/providers/AuthProvider";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "../../public/font";
 
 export const metadata: Metadata = {
   title: "Blog Next App",
